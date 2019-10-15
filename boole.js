@@ -29,9 +29,7 @@ function revealAll() {
 
 function changeTableHeaderStyle(key, value) {
 	const headers = document.getElementsByTagName("th");
-	for (header of headers) {
-		header.style[key] = value;
-	}
+	headers.forEach(header => header.style[key] = value);
 }
 
 ////////////////////////////////// initialize //////////////////////////////////
